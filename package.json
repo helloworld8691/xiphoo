@@ -1,0 +1,87 @@
+{
+  "name": "Xiphoo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@bugsnag/react-native": "^7.16.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-native-fontawesome": "^0.2.6",
+    "@react-native-async-storage/async-storage": "^1.13.2",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/netinfo": "5.9.9",
+    "@react-navigation/drawer": "^5.11.4",
+    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/stack": "^5.12.8",
+    "@typescript-eslint/parser": "^4.25.0",
+    "amazon-cognito-identity-js": "^4.5.6",
+    "asn1.js": "^5.4.1",
+    "aws-amplify": "^3.3.13",    
+    "bn.js": "4.11.9",
+    "buffer": "^6.0.3",
+    "elliptic": "6.5.3",
+    "isomorphic-webcrypto": "^2.3.6",
+    "node-libs-browser": "2.2.1",
+    "patch-package": "^6.2.2",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-camera": "^3.40.0",
+    "react-native-device-info": "^8.0.1",
+    "react-native-device-settings": "^1.2.0",
+    "react-native-gesture-handler": "^1.9.0",
+    "react-native-get-location": "^2.0.0",
+    "react-native-modal": "^11.6.1",
+    "react-native-nfc-manager": "3.1.0",
+    "react-native-os": "^1.2.6",
+    "react-native-reanimated": "^1.13.2",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.17.1",
+    "react-native-svg": "^12.1.0",
+    "react-native-webview": "^11.2.1",
+    "react-native-zebra-scanner": "^1.0.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@bugsnag/source-maps": "^2.3.1",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/jest": "^27.4.0",
+    "@types/react-native": "^0.63.43",
+    "@types/react-redux": "^7.1.15",
+    "@types/redux-logger": "^3.0.8",
+    "babel-jest": "^25.1.0",
+    "babel-plugin-rewrite-require": "^1.14.5",
+    "eslint": "^6.5.1",
+    "jest": "^27.4.5",
+    "jest-expo": "^44.0.1",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-native-svg-transformer": "^0.14.3",
+    "react-test-renderer": "16.13.1",
+    "redux-logger": "^3.0.6"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|@?react-navigation)"
+    ],
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ]
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/"
+    ]
+  }
+}

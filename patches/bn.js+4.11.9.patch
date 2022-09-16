@@ -1,0 +1,29 @@
+diff --git a/node_modules/bn.js/lib/bn.js b/node_modules/bn.js/lib/bn.js
+index 855dfa6..0a50cdc 100644
+--- a/node_modules/bn.js/lib/bn.js
++++ b/node_modules/bn.js/lib/bn.js
+@@ -3075,6 +3075,15 @@
+   }
+   inherits(P192, MPrime);
+ 
++
++  function R160 () {
++    MPrime.call(
++      this,
++      'r160',
++      'ffffffff ffffffff ffffffff ffffffff 7fffffff');
++  }
++  inherits(R160, MPrime);
++
+   function P25519 () {
+     // 2 ^ 255 - 19
+     MPrime.call(
+@@ -3115,6 +3124,8 @@
+       prime = new P192();
+     } else if (name === 'p25519') {
+       prime = new P25519();
++    } else if (name === 'r160') {
++      prime = new R160();
+     } else {
+       throw new Error('Unknown prime ' + name);
+     }

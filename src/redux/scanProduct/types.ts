@@ -1,0 +1,7 @@
+export const START_SCANNING_REQUEST = "scanProduct/start_scanning_request"
+export const START_SHADOW_SCANNING_REQUEST = "scanProduct/start_shadow_scanning_request"
+export const START_SCANNING_SUCCESS = "scanProduct/start_scanning_success"
+export const START_SCANNING_FAILURE = "scanProduct/start_scanning_failure"
+export const RESET = "scanProduct/reset"
+export const TAG_DETECTED = "scanProduct/tag_detected"
+export const SET_IN_PROGRESS = "scanProduct/set_in_progress"

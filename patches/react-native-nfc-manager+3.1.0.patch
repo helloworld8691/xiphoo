@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-nfc-manager/android/src/main/java/community/revteltech/nfc/NfcManager.java b/node_modules/react-native-nfc-manager/android/src/main/java/community/revteltech/nfc/NfcManager.java
+index 8ee8c03..f54a1a2 100644
+--- a/node_modules/react-native-nfc-manager/android/src/main/java/community/revteltech/nfc/NfcManager.java
++++ b/node_modules/react-native-nfc-manager/android/src/main/java/community/revteltech/nfc/NfcManager.java
+@@ -1162,7 +1162,7 @@ class NfcManager extends ReactContextBaseJavaModule implements ActivityEventList
+         } else if (action.equals(NfcAdapter.ACTION_TAG_DISCOVERED)) {
+             parsed = tag2React(tag);
+         }
+-
++        this.tag = tag;
+         return parsed;
+     }
+ 

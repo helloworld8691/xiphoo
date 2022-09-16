@@ -1,0 +1,35 @@
+@tagID = 045E27D29C3980
+@barcode = 978020137962
+@cypher = AbGJaA4rQOI2+Lel/HgomCDISdd1zZPphhhx8+uqQhV24ZU29yvXjNf25zcgRwBl
+@token = eyJraWQiOiJ0S2JUS3l1RGtpMGJWSDh6eGJEdVlQbWVSTDFFQ0p4XC9kNzN0QmpJWDdhND0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIyZTkyMTQwMy00ZGQxLTQyMGYtYmI2ZC00ZGZlZjU4NTAzMGYiLCJhdWQiOiI1cjlqcmU2bWFrZ2w0ODU3MTI1YXRtMGx0dCIsImV2ZW50X2lkIjoiY2QwNzQxYzgtNzc0ZC00ZWJiLWJhODgtZjNhYTIzOWRjZTY5IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2MTA1NTEwODUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS1jZW50cmFsLTEuYW1hem9uYXdzLmNvbVwvZXUtY2VudHJhbC0xX294d3BkMmY1ZyIsImNvZ25pdG86dXNlcm5hbWUiOiIyZTkyMTQwMy00ZGQxLTQyMGYtYmI2ZC00ZGZlZjU4NTAzMGYiLCJleHAiOjE2MTA1NTQ2ODUsImlhdCI6MTYxMDU1MTA4NSwiZW1haWwiOiJ0ZXN0QGVhc3ltb2Jpei5jb20ifQ.Kl3cnlHppWitMMkAMycP4JgOojL5lhDvkQvMaZfPe5nphWy6-fctbyAeiDNGYVm7lSDb-Wgbav6Iznq0Y7hqWjgL58G7HFiI9vA7dPJJZAUs36F2CmyNN395bASZvwwTlIcEh6AJotNA3BCvpQGiDnGMhjRkNBdbKjt7onx25pmGuvkvfdYF2KvjjvOv2ShXjVUuVu5e7YIN2BlZAN4b7gRipc73tGx8-MyYTMwET1lbN4qhdcMQwIOFqMYsFOCSn1-OFFaNNEEoKjodZ6LWQSnFlH3X07NWthbl3tm0zM7dMF72_CyPXOhH4XQetcdxvuwAVsMsvltXFywk_G75CA
+
+
+### Create Tag
+
+POST https://api.xiphoo.com/dev/tag
+accept: application/json
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "uid": "{{tagID}}",
+    "barcode": "{{barcode}}",  
+    "overwrite": true
+}
+
+
+### Confirm Tag
+PUT https://api.xiphoo.com/dev/tag/{{tagID}}
+accept: application/json
+Authorization: {{token}}
+Content-Type: application/json
+
+{  
+    "newCipher": "{{cypher}}"
+}
+
+### Verify Tag
+GET https://api.xiphoo.com/dev/tag/{{tagID}}
+accept: application/json
+Authorization: {{token}}
+Cipher: {{cypher}}

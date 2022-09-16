@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728267910182",
+    "project_id": "xiphoo-c0631",
+    "storage_bucket": "xiphoo-c0631.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728267910182:android:f07c89cd3b8e13ace58ae7",
+        "android_client_info": {
+          "package_name": "com.xiphoo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728267910182-hug065c5ecqufln8868qc8hfd4224nit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg1Cr4oUbU0AbqySpWmsHk6mMiwfqbo-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728267910182-hug065c5ecqufln8868qc8hfd4224nit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,207 @@
+{
+    "required": [
+      "brandName",
+      "productName",
+      "colorName",
+      "sizeName",
+      "productDetails"
+    ],
+    "type": "object",
+    "properties": {
+      "brandName": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "productName": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "colorName": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "sizeName": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "brandLogo": {
+        "type": "string",
+        "format": "uri"
+      },
+      "productImage": {
+        "type": "string",
+        "format": "uri"
+      },
+      "productURL": {
+        "type": "string",
+        "format": "uri"
+      },
+      "productDetails": {
+        "required": [
+          "sku",
+          "ean"
+        ],
+        "type": "object",
+        "properties": {
+          "sku": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "subCategory": {
+            "type": "string"
+          },
+          "furtherSubCategory": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "ean": {
+            "type": "string",
+            "minLength": 13,
+            "maxLength": 13
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "required": [
+                "name",
+                "materials"
+              ],
+              "type" : "object",
+              "properties": {
+                "name": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "materials": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "required": [
+                      "name",
+                      "amount"
+                    ],
+                    "type" : "object",
+                    "properties": {
+                      "name": {
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "minimum" : 0,
+                        "maximum" : 100
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "laundry": {
+            "type": "object",
+            "properties": {
+              "washing": {
+                "required": [
+                  "text",
+                  "symbol"
+                ],
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "symbol": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                }
+              },
+              "bleaching": {
+                "required": [
+                  "text",
+                  "symbol"
+                ],
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "symbol": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                }
+              },
+              "drying": {
+                "required": [
+                  "text",
+                  "symbol"
+                ],
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "symbol": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                }
+              },
+              "ironing": {
+                "required": [
+                  "text",
+                  "symbol"
+                ],
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "symbol": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                }
+              },
+              "professionalCleaning": {
+                "required": [
+                  "text",
+                  "symbol"
+                ],
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "symbol": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

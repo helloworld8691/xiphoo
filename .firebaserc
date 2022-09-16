@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "xiphoo-c0631",
+    "dev": "xiphoo-dev",
+    "prod": "xiphoo-c0631"
+  },
+  "targets": {}
+}

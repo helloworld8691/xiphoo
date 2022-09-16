@@ -1,0 +1,7 @@
+export const LOAD_SETTINGS_REQUEST = "settings/load_settings_request"
+export const LOAD_SETTINGS_SUCCESS = "settings/load_settings_success"
+export const LOAD_SETTINGS_FAILURE = "settings/load_settings_failure"
+export const UPDATE_SETTINGS_REQUEST = "settings/update_settings_request"
+export const UPDATE_SETTINGS_SUCCESS = "settings/update_settings_success"
+export const UPDATE_SETTINGS_FAILURE = "settings/update_settings_failure"
+export const ADD_LOCATION_PROMISE = "settings/add_location_promise"

@@ -1,0 +1,43 @@
+
+GET https://api.xiphoo.com/dev/tag/04fcba9a613e80
+Content-Type: application/json
+# Cipher: ARd3A+3A4GbUdbpMUSnVctzFOv8OkQXBqDHqMLND9RSq7iHj8RG6stfbSJ65Arsl
+Cipher: Ad6Mi+DJ9FfPAQcaqZ/e80o71sSrYFpvoKFAX/DV2LtGTYIPBTcbGoo0cUZbfEl+
+
+
+###
+# GET https://api.xiphoo.com/dev/tag/04fcba9a613e80?readonly=true
+Content-Type: application/json
+# Cipher: ARd3A+3A4GbUdbpMUSnVctzFOv8OkQXBqDHqMLND9RSq7iHj8RG6stfbSJ65Arsl
+Cipher: Ad6Mi+DJ9FfPAQcaqZ/e80o71sSrYFpvoKFAX/DV2LtGTYIPBTcbGoo0cUZbfEl+
+
+###
+OPTIONS https://api.xiphoo.com/dev/tag/04fcba9a613e80?readonly=true
+Content-Type: application/json
+# Cipher: ARd3A+3A4GbUdbpMUSnVctzFOv8OkQXBqDHqMLND9RSq7iHj8RG6stfbSJ65Arsl
+Cipher: Ad6Mi+DJ9FfPAQcaqZ/e80o71sSrYFpvoKFAX/DV2LtGTYIPBTcbGoo0cUZbfEl+
+
+###
+GET https://api.xiphoo.com/dev/tag/04fcba9a613e80?readonly=true
+cipher: Ad6Mi+DJ9FfPAQcaqZ/e80o71sSrYFpvoKFAX/DV2LtGTYIPBTcbGoo0cUZbfEl+
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"
+sec-ch-ua-mobile: ?1
+referrer: http://localhost:8080/
+referrerPolicy: strict-origin-when-cross-origin
+method: GET
+mode: cors
+###
+curl 'https://api.xiphoo.com/dev/tag/04dcba9a613e80?readonly=true' \
+  -X 'OPTIONS' \
+  -H 'authority: api.xiphoo.com' \
+  -H 'accept: */*' \
+  -H 'access-control-request-method: GET' \
+  -H 'access-control-request-headers: cipher' \
+  -H 'origin: http://localhost:8080' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; SM-N960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: http://localhost:8080/' \
+  -H 'accept-language: de-AT,de;q=0.9,en-IE;q=0.8,en-AT;q=0.7,en;q=0.6,de-DE;q=0.5,en-US;q=0.4' \
+  --compressed
